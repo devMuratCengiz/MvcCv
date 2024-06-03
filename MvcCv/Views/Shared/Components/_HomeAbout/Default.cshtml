@@ -1,0 +1,28 @@
+﻿@model List<ResultAboutDto>
+@{
+    Layout = null;
+}
+@foreach (var item in Model)
+{
+
+<section class="resume-section" id="about">
+    <div class="resume-section-content">
+        <h1 class="mb-0">
+            @item.Name
+            <span style="color:#218380">@item.Surname</span>
+        </h1>
+        <div class="subheading mb-5">
+            @item.Address · @item.Phone ·
+            <a style="color:#218380" href="mailto:@item.Mail">@item.Mail</a>
+        </div>
+        <p class="lead mb-5">@item.Description</p>
+        <div class="social-icons">
+            <a class="social-icon" href="@item.LinkedInUrl"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social-icon" href="@item.GithubUrl"><i class="fab fa-github"></i></a>
+            
+        </div>
+    </div>
+</section>
+<hr class="m-0" />
+
+}

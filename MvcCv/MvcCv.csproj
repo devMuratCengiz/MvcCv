@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\AdminLTE-3.2.0\.github\codeql\codeql-config.yml" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.github\CONTRIBUTING.md" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.github\dependabot.yml" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.github\ISSUE_TEMPLATE\bug-report-for-adminlte-v3.1-x.md" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.github\ISSUE_TEMPLATE\feature-request-for-adminlte-v4-x.md" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.github\workflows\ci.yml" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.github\workflows\codeql.yml" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.github\workflows\docs.yml" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.github\workflows\lint.yml" />
+    <None Include="wwwroot\colorlib-regform-7\.sass-cache\21880c0ffe15753a53f8402e9f64e1077e071510\style.scssc" />
+    <None Include="wwwroot\colorlib-regform-7\.sass-cache\2866be86c578bb583fbf023501bb9fd24cc3bf22\extend.scssc" />
+    <None Include="wwwroot\colorlib-regform-7\.sass-cache\2866be86c578bb583fbf023501bb9fd24cc3bf22\fonts.scssc" />
+    <None Include="wwwroot\colorlib-regform-7\.sass-cache\2866be86c578bb583fbf023501bb9fd24cc3bf22\global.scssc" />
+    <None Include="wwwroot\colorlib-regform-7\.sass-cache\2866be86c578bb583fbf023501bb9fd24cc3bf22\minxi.scssc" />
+    <None Include="wwwroot\colorlib-regform-7\.sass-cache\2866be86c578bb583fbf023501bb9fd24cc3bf22\variables.scssc" />
+    <None Include="wwwroot\colorlib-regform-7\.sass-cache\3948936f84e1a30385e73a9be140b58b48c82e15\style.scssc" />
+    <None Include="wwwroot\colorlib-regform-7\.sass-cache\643489b018602f15119d8f44aeb7fc79468873a9\main.scssc" />
+    <None Include="wwwroot\colorlib-regform-7\.sass-cache\643489b018602f15119d8f44aeb7fc79468873a9\responsive.scssc" />
+    <None Include="wwwroot\colorlib-regform-7\.sass-cache\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\extend.scssc" />
+    <None Include="wwwroot\colorlib-regform-7\.sass-cache\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\fonts.scssc" />
+    <None Include="wwwroot\colorlib-regform-7\.sass-cache\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\global.scssc" />
+    <None Include="wwwroot\colorlib-regform-7\.sass-cache\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\minxi.scssc" />
+    <None Include="wwwroot\colorlib-regform-7\.sass-cache\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\variables.scssc" />
+    <None Include="wwwroot\colorlib-regform-7\.sass-cache\9dc767a56f3dc2f8a933300255cd2265f13191d4\main.scssc" />
+    <None Include="wwwroot\colorlib-regform-7\.sass-cache\9dc767a56f3dc2f8a933300255cd2265f13191d4\responsive.scssc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MvcCv.Business\MvcCv.Business.csproj" />
+    <ProjectReference Include="..\MvcCv.DataAccess\MvcCv.DataAccess.csproj" />
+    <ProjectReference Include="..\MvcCv.DTO\MvcCv.DTO.csproj" />
+  </ItemGroup>
+
+</Project>

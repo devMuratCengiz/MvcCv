@@ -1,0 +1,24 @@
+﻿@model List<ResultEducationDto>
+@{
+    Layout = null;
+}
+
+<section class="resume-section" id="education">
+    <div class="resume-section-content">
+        <h2 class="mb-5">Education</h2>
+        @foreach (var item in Model)
+        {
+            
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">@item.SchoolName</h3>
+                <div class="subheading mb-3">@item.Department</div>
+                
+                <p>GPA: @item.GPA</p>
+            </div>
+            <div class="flex-shrink-0"><span style="color:#218380">@item.StartDate - @item.EndDate</span></div>
+        </div>
+        }
+    </div>
+</section>
+<hr class="m-0" />

@@ -1,0 +1,28 @@
+﻿@model UpdateExperienceDto
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Update Experience</h1>
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+    <label>Title</label>
+    <input type="text" asp-for="Title" class="form-control" />
+    <br />
+    <label>Subtitle</label>
+    <input type="text" asp-for="Subtitle" class="form-control" />
+    <br />
+    <label>Description</label>
+    <textarea asp-for="Description" class="form-control" rows="5" ></textarea>
+    <br />
+    <label>Start Date</label>
+    <input type="text" asp-for="StartDate" class="form-control" />
+    <br />
+    <label>End Date</label>
+    <input type="text" asp-for="EndDate" class="form-control" />
+    <br />
+
+    <button class="btn btn-outline-primary">Update</button>
+</form>
+

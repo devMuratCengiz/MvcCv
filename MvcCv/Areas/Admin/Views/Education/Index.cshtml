@@ -1,0 +1,39 @@
+﻿@model List<ResultEducationDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Educations</h1>
+<table class="table table-hover table-bordered">
+    @{
+        int count = 0;
+    }
+    <tr>
+        <th>#</th>
+        <th>School Name</th>
+        <th>Department</th>
+        <th>GPA</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count</td>
+            <td>@item.SchoolName</td>
+            <td>@item.Department</td>
+            <td>@item.GPA</td>
+            <td>@item.StartDate</td>
+            <td>@item.EndDate</td>
+            <td>
+                <a asp-controller="Education" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger">Delete</a>
+                <a asp-controller="Education" asp-action="Update" asp-route-id="@item.Id" class="btn btn-outline-info">Update</a>
+            </td>
+        </tr>
+    }
+</table>
+<a asp-controller="Education" asp-action="Create" class="btn btn-outline-dark">Create</a>
+

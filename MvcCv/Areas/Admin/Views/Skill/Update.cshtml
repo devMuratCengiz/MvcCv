@@ -1,0 +1,17 @@
+﻿@model UpdateSkillDto
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Update Skill</h1>
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+    <label>Name</label>
+    <input type="text" asp-for="Name" class="form-control" />
+    <br />
+
+    <button class="btn btn-outline-primary">Update</button>
+</form>
+
+
