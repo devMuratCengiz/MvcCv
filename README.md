@@ -10,4 +10,8 @@ Bu proje Asp.Net kullanılarak geliştirilmiş bir CV sitesidir. Sayfadaki her �
 
 ## Ekran Görüntüleri
 ![ss](MvcCv/wwwroot/Images/cvFoto/img1.png)
+![ss](MvcCv/wwwroot/Images/cvFoto/img2.png)
+![ss](MvcCv/wwwroot/Images/cvFoto/img3.png)
+![ss](MvcCv/wwwroot/Images/cvFoto/img4.png)
+![ss](MvcCv/wwwroot/Images/cvFoto/img5.png)
 
