@@ -1,4 +1,3 @@
-# Proje = https://www.muratcengiz.com.tr
 # Proje Detayı
 Bu proje Asp.Net kullanılarak geliştirilmiş bir CV sitesidir. Sayfadaki her öğe dinamik haldedir.
 ## Kullanılan Teknolojiler
